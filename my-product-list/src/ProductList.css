@@ -1,0 +1,22 @@
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px;
+  width: 300px;
+}
+.product-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.product-card p {
+  text-align: left;
+}
+
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
