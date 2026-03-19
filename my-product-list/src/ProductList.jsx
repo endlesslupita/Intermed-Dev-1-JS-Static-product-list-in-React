@@ -2,7 +2,7 @@ import products from './data/products.js'
 import './ProductList.css'
 
 
-function ProductList() {
+function ProductList(props) {
 return (
         <div className="product-cards">
 {products.map(function(product){
