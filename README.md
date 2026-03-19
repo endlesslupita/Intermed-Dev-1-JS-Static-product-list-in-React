@@ -1,5 +1,45 @@
 # Static Product List in React
 
+## About This Project
+
+This is a static product list built with React and Vite. It displays a catalogue of 20 bicycle components, each shown as a card with the product name, specifications, and price. Product data is defined in a separate data file and rendered using `map()`. The project includes 6 Vitest test cases covering normal and edge cases.
+
+## How to Run
+
+```bash
+cd my-product-list
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+To run tests:
+
+```bash
+npx vitest run
+```
+
+---
+
+## Video Presentation Guide
+
+- **Show the running app** — open the browser, scroll through the product cards
+- **Explain the component structure** — `App.jsx` passes data as a prop to `ProductList.jsx`, which uses `map()` to render each card
+- **Explain the data file** — `src/data/products.js` exports a `products` array of objects with `id`, `name`, `description`, and `price`
+- **Show the `key` prop** — point out `key={product.id}` in `ProductList.jsx` and explain why React requires it for list items
+- **Run the tests** — run `npx vitest run` and show all 6 passing
+- **Explain normal test cases:**
+  - Correct number of cards rendered (20)
+  - First product name is displayed
+  - A product price is displayed
+- **Explain edge test cases:**
+  - Empty array renders no cards
+  - A product with a very long description renders without crashing
+  - Last product in the list is displayed
+
+---
+
 ## Assignment Overview
 
 Build a **Static Product List** display using React, focusing on rendering a list from a provided dataset without involving state management.
